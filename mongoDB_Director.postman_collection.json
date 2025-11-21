@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "51724c26-d43c-4a23-af11-18100cd6ca46",
+		"name": "mongoDB_Director",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48015912"
+	},
+	"item": [
+		{
+			"name": "mengisi direktor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Sigit\",\r\n        \"birthYear\": 2007\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "menampilkan semua direktor",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update directors",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"68fb36cae4afc7cb5cf4804c\",\r\n        \"name\": \"BrewokAudio\",\r\n        \"birthYear\": 1988\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3300/directors/68fb36cae4afc7cb5cf4804c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						"68fb36cae4afc7cb5cf4804c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus directors",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3300/directors/68fb3690e4afc7cb5cf48048",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"directors",
+						"68fb3690e4afc7cb5cf48048"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
