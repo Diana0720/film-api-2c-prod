@@ -99,7 +99,7 @@ app.get('/movies/:id', async (req, res, next) => {
   const sql = `
     SELECT m.id, m.title, m.year, d.id as director_id, d.name as director_name
     FROM movies m
-    LEFT LEFT JOIN directors d ON m.director_id = d.id
+    LEFT JOIN directors d ON m.director_id = d.id
     WHERE m.id = $1
   `;
   try {
